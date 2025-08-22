@@ -86,7 +86,7 @@ function addExtensions(arr, act = 'all') {
         const remove = document.createElement('div');
         remove.classList.add("brows-ext__box-remove");
         remove.role = 'button';
-        remove.tabIndex = (4 + i * 2 + 1);
+        remove.tabIndex = 0;
         remove.setAttribute('data-id', origInd);
         remove.textContent = 'Remove';
         boxBottom.appendChild(remove);
@@ -94,7 +94,7 @@ function addExtensions(arr, act = 'all') {
         const boxSwitch = document.createElement('div');
         boxSwitch.classList.add("brows-ext__switch");
         boxSwitch.setAttribute('data-id', origInd);
-        boxSwitch.tabIndex = (4 + i * 2 + 1);
+        boxSwitch.tabIndex = 0;
         boxBottom.appendChild(boxSwitch);
 
         const switchButton = document.createElement('div');
@@ -292,5 +292,6 @@ function renderGrid() {
             makeActive();
             removeExtension();
 }
+
 
 
